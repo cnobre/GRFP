@@ -1,0 +1,216 @@
+% \documentclass{nsfgrfp}
+% \documentclass[timesfont]{nsfgrfp}
+\documentclass[timesfont,runinheadings]{nsfgrfp}
+% \documentclass[timesfont,runinheadings,crowdlines]{nsfgrfp}
+% \documentclass[timesfont,runinheadings,crowdlinesmax]{nsfgrfp}
+%
+\usepackage{paralist}			% for compact lists
+\usepackage[vskip=0.25ex]{quoting}	% for compact quotes
+
+\begin{document}
+
+\section*{Introduction.}
+
+\texttt{nsfgrfp.cls} provides a class file supporting the writing of NSF
+Graduate Research Fellowship statments in \LaTeX.  By default, it uses
+1" margins and 12 point Computer Modern fonts.  Section headings are
+changed to use the same font size as the main text and use a minimum of
+extra space above and below.  The figure placement rules used by \LaTeX
+are turned off to give more control to the user.
+
+\section*{Class options, new environment, and new commands.}
+
+The following class options are supported:
+
+\vspace{0.5ex}
+
+\begin{compactdesc}
+
+\item[\texttt{timesfont}]
+This option switches from 12pt ComputerModern to 12pt Times
+Roman.  Times Roman is a denser font than ComputerModern in both
+the characters themselves and the character spacing.  More text
+will fit within the page limit with Times Roman than with
+ComputerModern.
+
+\item[\texttt{mathtimesfont}]
+As with the timesfont option, except that mathematics is also set in the
+times font.  See documentation on the \texttt{mathptmx} package for
+information on when this might not work.
+
+\item[\texttt{runinheadings}]
+Start text immediately to the right of headings, rather than
+putting the heading on its own line.
+
+\item[\texttt{crowdlines}]
+Reduce the spacing between lines to get more text into a fixed
+number of pages.  This will make the document harder to read.
+
+\item[\texttt{crowdlinesmax}]
+Reduce the spacing between lines even more This will make the document
+VERY hard to read.  (Readability is reduced to the MS Word level of
+typography!)
+
+\item[\texttt{paragraphspacing}]
+Switch from the default of indenting the start of each new
+paragraph to an alternate format in which a blank line is placed
+between paragraphs and there is no indenting at the start of each
+paragraph. The default style allows more text to fit within the
+page limit.
+
+\end{compactdesc}
+
+\vspace{0.5ex}
+
+\noindent
+To fill the maximum amoutn of space with the least actual content, use
+\begin{quoting}
+\texttt{\textbackslash documentclass\{nsfgrfp\}}
+\end{quoting}
+To cram the maximum amount of content into the least space, use
+\begin{quoting}
+\texttt{\textbackslash documentclass[%
+timesfont,runinheadings,crowdlinesmax]\{nsfgrfp\}}
+\end{quoting}
+
+\vspace{0.5ex}
+
+\noindent
+One new command is defined:
+
+\vspace{0.5ex}
+
+\begin{compactdesc}
+
+\item[\texttt{\textbackslash boxtext{text}}]
+Typeset the argument in a box prominently displayed on the page.  Useful
+for notes that need to be addressed before the document is finalized.
+
+\end{compactdesc}
+
+\vspace{0.5ex}
+
+\noindent
+One new environment is defined:
+
+\begin{compactdesc}
+
+\item[\texttt{\textbackslash begin\{smallertext\} \ldots\
+	\textbackslash end\{smallertext\}}]
+Typeset everthing in the environment in a 10pt. font, as for references.
+
+\end{compactdesc}
+
+\vspace{0.5ex}
+
+\begin{smallertext}
+
+\noindent
+Text in the \texttt{smallertext} environment looks like this
+and this
+and this
+and this
+and this
+and this
+and this
+and this
+and this
+and this
+and this
+and this
+and this\ldots.
+
+\end{smallertext}
+
+\vspace{0.5ex}
+
+\begin{compactitem}
+
+\item
+If you are determined to use a bulleted list\ldots
+
+\item
+you can save space with the \texttt{paralist} package\ldots
+
+\item
+which supports the \texttt{compactitem} environment.
+
+\end{compactitem}
+
+\vspace{0.5ex}
+
+The remainder of this document is total drivel (synonyms: nonsense,
+twaddle, claptrap, balderdash, gibberish, rubbish, garbage).
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel
+augue mattis, vehicula purus eu, condimentum tellus. Fusce lectus quam,
+scelerisque vel tellus ut, condimentum semper ligula. Etiam orci dolor,
+varius non erat a, interdum finibus nulla. Vestibulum sodales ante in
+turpis condimentum, in tincidunt lorem maximus. Donec vitae blandit
+dolor. Vestibulum sagittis fermentum erat, in consectetur sem maximus
+at. Mauris interdum cursus sodales. Integer eu elit ultrices, porttitor
+ipsum non, vulputate nunc. In pulvinar, mauris ut varius porta, lacus
+neque dignissim metus, ac fermentum nulla sapien vel diam. Praesent id
+feugiat arcu, et ultrices felis. Pellentesque convallis augue odio. Nam
+ut semper dolor. Cras lectus lectus, rutrum non tincidunt ac, pulvinar
+quis augue.
+
+Nunc accumsan accumsan quam semper posuere. Integer nec semper lectus,
+sit amet euismod est. Cras sit amet nunc neque. Nullam ullamcorper,
+tellus vel pulvinar rutrum, nulla purus facilisis lorem, quis dignissim
+lacus eros aliquam dolor. Cras placerat varius mollis. Morbi ipsum nisl,
+dapibus a tortor vel, efficitur porta nibh. Cras hendrerit aliquet
+sodales. Aliquam quis scelerisque metus. Phasellus ultrices at odio vel
+fermentum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis
+nec eros ac dictum. Maecenas at congue lectus. Vivamus molestie nunc at
+elit pharetra imperdiet. Nulla non metus sit amet lacus dapibus
+tristique a vel lorem. Maecenas id turpis at mi consectetur convallis
+vel ac nibh. Ut in nulla nibh. Vivamus odio purus, volutpat scelerisque
+nisi eu, malesuada maximus est. Nam quis lacinia metus. Quisque ac
+dictum mauris. Praesent sodales quam nec diam dapibus, sit amet tempus
+turpis vestibulum. Ut eu aliquam eros. Pellentesque dapibus ipsum id
+fringilla efficitur. Quisque imperdiet vulputate eros, at efficitur enim
+commodo at. Pellentesque sit amet augue vel tortor iaculis hendrerit.
+
+Maecenas id quam et purus consequat dictum sed nec eros. Mauris varius,
+tellus eget mattis egestas, neque metus ullamcorper elit, in rhoncus
+lorem sapien congue diam. Nullam vel felis lacus. Nunc arcu metus,
+convallis vitae consectetur ut, vestibulum vitae ipsum. In varius sapien
+ac lacus elementum eleifend. Aliquam pulvinar augue ut metus venenatis,
+non vestibulum felis bibendum. Nam erat mauris, facilisis ultrices
+tellus sit amet, vehicula porta nibh. Duis porta faucibus tincidunt.
+Nullam mollis rutrum posuere. Aenean dapibus ultricies mauris, at
+posuere ipsum feugiat non. Fusce eget massa nunc. Vestibulum sed tortor
+eu mauris mollis pretium. Vestibulum in consequat enim. Fusce luctus
+velit urna. Nullam aliquam nunc a enim consequat bibendum. Lorem ipsum
+dolor sit amet, consectetur adipiscing elit.
+
+Duis sed laoreet augue. Curabitur finibus pretium ex id vulputate.
+Maecenas accumsan ipsum nec facilisis faucibus. Donec sit amet turpis id
+turpis vulputate aliquam. Nulla sit amet risus at sapien tempor
+venenatis vitae at nisl. Suspendisse consectetur varius risus, eget
+porta elit venenatis sit amet. Vestibulum sit amet quam sit amet lacus
+porttitor pellentesque. Nulla justo nibh, volutpat a magna eget,
+venenatis laoreet ex. Aenean ultrices hendrerit magna, gravida hendrerit
+erat cursus at. Donec venenatis condimentum ante tincidunt pellentesque.
+Ut dolor arcu, commodo quis turpis eget, commodo ornare tellus.
+
+Pellentesque et lorem bibendum, scelerisque tortor nec, fringilla sem.
+Praesent quis metus metus. Vestibulum sagittis magna et metus
+condimentum rutrum. Sed augue purus, pretium et aliquet id, facilisis at
+magna. Etiam dictum est vel nulla placerat feugiat. Sed malesuada
+vulputate purus, a tincidunt est consectetur eget. Nulla condimentum,
+orci sit amet aliquam sodales, urna nunc tristique augue, non feugiat
+dolor enim eu nisl.
+
+Nam sodales mollis nunc in elementum. In hac habitasse platea dictumst.
+Nullam vitae lectus sapien. Morbi a arcu eros. Nullam iaculis sem vel
+quam luctus luctus. Donec porta, diam ac viverra dictum, augue est
+varius ex, eget tempor est nisi pulvinar felis. Donec ligula nisl,
+fringilla ut tortor et, bibendum aliquam tortor. Ut orci tortor, porta
+vestibulum pellentesque eget, commodo quis eros. Proin venenatis dolor
+quis massa malesuada commodo.
+
+\end{document}
